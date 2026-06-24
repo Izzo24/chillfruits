@@ -273,3 +273,11 @@ section{padding:84px 0;position:relative}
 .carrow{width:48px;height:48px;border-radius:50%;border:2.5px solid var(--pink);background:#fff;color:var(--pink-d);box-shadow:0 4px 0 var(--pink-d)}
 .carrow:hover:not(:disabled){background:var(--pink);color:#fff}
 .carrow:active:not(:disabled){transform:translateY(3px);box-shadow:0 1px 0 var(--pink-d)}
+
+/* header 選單靠右・排版優化 */
+.nav__in{gap:14px}
+.menu{margin-left:auto;gap:clamp(3px,.55vw,9px)}
+.menu a{padding:8px 12px}
+.nav__cta{margin-left:16px}
+.cartbtn{margin-left:8px}
+
