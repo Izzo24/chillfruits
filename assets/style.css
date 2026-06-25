@@ -189,7 +189,10 @@ section{padding:84px 0;position:relative}
   .hero__copy,.season__copy{text-align:center}
   .hero .eyebrow,.season .eyebrow{justify-content:center}
   .lede{margin:0 auto}.hero__cta,.trust,.season__price,.visit__cta{justify-content:center}
-  .info li{justify-content:center}.sec-head--left{text-align:center}
+  /* 門市資訊：整組置中，但每行標籤靠左對齊（避免置中造成標籤參差不齊）。 */
+  .info{width:fit-content;margin-left:auto;margin-right:auto;text-align:left}
+  .info li{justify-content:flex-start}
+  .sec-head--left{text-align:center}
 }
 @media(max-width:560px){
   .grid--3{grid-template-columns:1fr}
