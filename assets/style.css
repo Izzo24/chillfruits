@@ -204,7 +204,7 @@ section{padding:84px 0;position:relative}
 :root{--c-accent:#ff7aa2;--c-accent2:#33a795;--c-ink:#3a2b3a;--c-muted:#7d6b78;--c-panel:#ffffff;--c-soft:#fff7fa;--c-line:#f1e2dd;--c-onacc:#ffffff}
 
 /* ===== 購物車 / 結帳 ===== */
-.cartbtn{position:fixed;top:14px;right:24px;z-index:150;box-shadow:0 6px 20px rgba(0,0,0,.3);border-radius:50%;display:inline-flex;align-items:center;justify-content:center;width:46px;height:46px;border-radius:12px;border:1.5px solid var(--c-line);background:var(--c-panel);color:var(--c-ink);cursor:pointer;transition:.2s;flex:none}
+.cartbtn{position:fixed;top:14px;right:24px;z-index:150;box-shadow:0 6px 20px rgba(0,0,0,.3);display:inline-flex;align-items:center;justify-content:center;width:46px;height:46px;border-radius:12px;border:1.5px solid var(--c-line);background:var(--c-panel);color:var(--c-ink);cursor:pointer;transition:.2s;flex:none}
 .cartbtn:hover{color:var(--c-accent);border-color:var(--c-accent)}
 .cartbtn__n{position:absolute;top:-6px;right:-6px;min-width:20px;height:20px;padding:0 5px;border-radius:999px;background:var(--c-accent);color:var(--c-onacc);font-size:.72rem;font-weight:700;display:flex;align-items:center;justify-content:center;line-height:1;transform:scale(0);transition:.2s}
 .cartbtn.has .cartbtn__n{transform:scale(1)}
@@ -281,14 +281,13 @@ section{padding:84px 0;position:relative}
 .nav__cta{margin-left:16px}
 
 @media(max-width:1080px){.menu{display:none}.burger{display:flex}}
-
-/* 手機版浮動鈕優化：購物車改右下角 FAB（拇指好按），回頂端鈕上移避免重疊。 */
+/* 手機版浮動鈕｜沁果：粉紅漸層・超圓潤大鈕，可愛感。 */
 @media(max-width:860px){
-  .cartbtn{top:auto;right:18px;bottom:18px;width:58px;height:58px;
-    background:var(--c-accent);color:var(--c-onacc);border-color:var(--c-accent);
-    box-shadow:0 8px 24px rgba(0,0,0,.3),0 2px 6px rgba(0,0,0,.2)}
-  .cartbtn:hover{color:var(--c-onacc);border-color:var(--c-accent)}
-  .cartbtn svg{width:25px;height:25px}
-  .cartbtn__n{top:-2px;right:-2px;border:2px solid var(--c-panel)}
-  .totop{bottom:88px;right:23px}
+  .cartbtn{top:auto;right:16px;bottom:16px;width:62px;height:62px;border-radius:50%;
+    background:linear-gradient(145deg,#ff9cbb,#ff5e8f);color:#fff;border:0;
+    box-shadow:0 10px 26px rgba(255,94,143,.5),0 3px 8px rgba(0,0,0,.18)}
+  .cartbtn:hover{color:#fff;transform:scale(1.06) rotate(-4deg)}
+  .cartbtn svg{width:27px;height:27px}
+  .cartbtn__n{top:-2px;right:-2px;background:#fff;color:var(--c-accent);border:2px solid var(--c-accent)}
+  .totop{bottom:92px;right:21px}
 }
